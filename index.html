@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+<body class="home">
 
+  <header class="primary-header">
+    <h1 class="text-dark fs-600 fw-800 text-align">Simple, traffic-based pricing</h1>
+    <p class="text-light fs-400 fw-600 text-align gap">Sign-up for our 30-day trial.</p>
+    <p class="text-light fs-400 fw-600 text-align gap" style="--gap-space:0.1rem;">No credit card required.</p>
+  </header>
+
+  <main class="pricing-container flex">
+    <h3 class="upper-case fs-200 fw-800 custom-spacing">100k pageviews</h3>
+   <div class="slider">
+     <input type="range" id="customRange" max="100" value="10">
+   </div> 
+     <p>$16.00 /month</p>
+     <div>
+       <p>Monthly Billing</p>
+      <input type="checkbox">
+        <p>Yearly Billing -25%</p>
+     </div>
+
+     <div>
+       <div> <p>Unlimited wesites</p></div>
+       <div><p>100% data ownership</p></div>
+       <div><p>Email reports</p></div>
+     </div>
+     <button>Start my trial</button>
+  </main>
+
+  <!--
   Pageviews
   $ /month
 
@@ -30,10 +52,17 @@
   Email reports
 
   Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+-->
+  <!--
+   <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Darlington Obiri Yeboah</a>.
+    </div>
+  </footer>
+
+ -->
+
 </body>
+
 </html>

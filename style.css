@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+/* Custom properties*/
+:root {
+  /* Primary Colors */
+  --clr-soft-cyan: 174, 77%, 80%;
+  --clr-strong-cyan: 174, 86%, 45%;
+  --clr-light-grayish-red: 14, 92%, 95%;
+  --clr-light-red: 15, 100%, 70%;
+  --clr-pale-blue: 226, 100%, 87%;
+  /* Neutral Colors */
+  --clr-white: 0, 0%, 100%;
+  --clr-very-pale-blue: 230, 100%, 99%;
+  --clr-light-grayish-blue: 224, 65%, 95%;
+  --clr-light-grayish-blue-bg: 223, 50%, 87%;
+  --clr-grayish-blue: 225, 20%, 60%;
+  --clr-dark-desaturated-blue: 227, 35%, 25%;
+  /* Font Weight */
+  --fw-600: 600;
+  --fw-800: 800;
+
+  /* Font Family */
+  --ff-manrope: "Manrope", serif;
+
+  /* Font Size */
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1.25rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+}
+
+/* Resets */
+/* Box Sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+picture,
+figure {
+  margin: 0;
+}
+
+/* Setting font weight */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: var(--fw-600);
+}
+
+/* Body setup */
+
+body {
+  display: grid;
+  background-color: hsl(var(--clr-very-pale-blue));
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+  color: hsl(var(--clr-grayish-blue));
+  place-content: center;
+}
+
+/* Img size config */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Typography */
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+
+.fw-600 {
+  font-weight: var(--fw-600);
+}
+
+.fw-800 {
+  font-weight: var(--fw-800);
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.custom-spacing
+{
+    word-spacing: 0.1rem;
+}
+
+.text-align {
+  text-align: center;
+}
+
+/* Colors */
+.text-dark {
+  color: hsl(var(--clr-dark-desaturated-blue));
+}
+.text-light {
+  color: hsl(var(--clr-grayish-blue));
+}
+.text-red {
+  color: hsl(var(--clr-light-red));
+}
+
+.bg-white{color: hsl(var(--clr-white))}
+
+/* Styling */
+.home {
+  background: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.gap
+{
+    margin-top: var(--gap-space,1rem);
+}
+
+.primary-header
+{
+    background: url(./images/pattern-circles.svg) no-repeat center; 
+    align-items: center;
+    background-size: contain;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.pricing-container
+{
+    background-color: hsl(var(--clr-white));
+    border-radius: 0.4rem;
+    place-items: center; 
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.slider
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+
+/* .shadow-component
+{
+   
+} */
+
+.d-block
+{
+    display: block;
+}
+
+/* 
+ .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  } */
