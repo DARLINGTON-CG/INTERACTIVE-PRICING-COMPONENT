@@ -10,34 +10,50 @@
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body class="home">
 
   <header class="primary-header">
     <h1 class="text-dark fs-600 fw-800 text-align">Simple, traffic-based pricing</h1>
-    <p class="text-light fs-400 fw-600 text-align gap">Sign-up for our 30-day trial.</p>
-    <p class="text-light fs-400 fw-600 text-align gap" style="--gap-space:0.1rem;">No credit card required.</p>
+    <p class="text-light fs-300 fw-600 text-align gap">Sign-up for our 30-day trial.</p>
+    <p class="text-light fs-300 fw-600 text-align gap" style="--gap-space:0.1rem;">No credit card required.</p>
   </header>
 
-  <main class="pricing-container flex">
-    <h3 class="upper-case fs-200 fw-800 custom-spacing">100k pageviews</h3>
-   <div class="slider">
-     <input type="range" id="customRange" max="100" value="10">
-   </div> 
-     <p>$16.00 /month</p>
-     <div>
-       <p>Monthly Billing</p>
-      <input type="checkbox">
-        <p>Yearly Billing -25%</p>
-     </div>
+  <main class="pricing-container grid">
 
-     <div>
-       <div> <p>Unlimited wesites</p></div>
-       <div><p>100% data ownership</p></div>
-       <div><p>Email reports</p></div>
-     </div>
-     <button>Start my trial</button>
+    <div class="first-container grid flow">
+      <h3 class="upper-case fs-200 fw-800 custom-spacing">100k pageviews</h3>
+      <div class="slider">
+        <input type="range" id="customRange" max="100" value="10">
+      </div>
+      <p class="fs-200"><span class="text-dark fw-800 fs-700 text-position">$16.00</span> /month</p>
+      <div class="flex billing">
+        <p class="fs-200">Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider-round"></span>
+        </label>
+        <p class="fs-200">Yearly Billing <span class="fs-100">-25%</span></p>
+      </div>
+    </div>
+
+    <div class="last-container grid">
+      <div class="benefits flow">
+        <div>
+          <p class="fs-200">Unlimited wesites</p>
+        </div>
+        <div>
+          <p class="fs-200">100% data ownership</p>
+        </div>
+        <div>
+          <p class="fs-200">Email reports</p>
+        </div>
+      </div>
+      <button class="fs-100">Start my trial</button>
+    </div>
+
   </main>
 
   <!--
